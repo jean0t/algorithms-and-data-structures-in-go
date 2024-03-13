@@ -1,4 +1,4 @@
-# algorythms-and-data-structures-in-go
+# algorithms-and-data-structures-in-go
 
 *Algorithms to train and data structures created for my study and develop muscle memory in go*
 
