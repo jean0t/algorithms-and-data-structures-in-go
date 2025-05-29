@@ -1,5 +1,16 @@
-# algorithms-and-data-structures-in-go
+# Go Algorithms Collection
 
-*Algorithms to train and data structures created for my study and develop muscle memory in go*
+This repository houses a collection of fundamental programming algorithms implemented in Go. It serves as a practical resource for understanding and referencing common algorithmic solutions.
 
-![knight](https://github.com/jean0t/algorythms-and-data-structures-in-go/assets/127698173/6f46f6e0-acf7-498a-8b06-6bb63116929a)
+## Algorithms Included
+
+The collection currently focuses on:
+
+  * **Sorting Algorithms:** Implementations of various techniques to arrange data in a specific order.
+  * **Searching Algorithms:** Implementations of methods for finding specific elements within data structures.
+
+-----
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/jean0t/algorithms-and-data-structures-in-go/LICENSE) file for details.
