@@ -17,7 +17,7 @@ func sort(arr []int, low, high int) {
     }
 }
 
-func partition(arr []int, low, high int) {
+func partition(arr []int, low, high int) int {
     var pivot int = arr[high]
     var i int = low - 1
 
