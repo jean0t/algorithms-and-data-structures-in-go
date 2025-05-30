@@ -18,7 +18,7 @@ func main() {
 	root.Right = newNode(6)
 	root.Left.Left = newNode(9)
 	root.Right.Right = newNode(10)
-	fmt.Println("In-order tranversal: ")
+	fmt.Println("In-order tranversal: ") // the result will be 9 3 5 6 10
 	inOrder(root)
 }
 
