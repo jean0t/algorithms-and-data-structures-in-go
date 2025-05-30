@@ -5,7 +5,7 @@ import (
     "math/rand"
 )
 
-func QuickSort(arr []int) {
+func QuickSortRandomized(arr []int) {
     if len(arr) < 2 {
         return
     }
