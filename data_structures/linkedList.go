@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package data_structures
 
 type node struct {
   data int
@@ -50,28 +48,4 @@ func (l *linkedList) delete(value int) {
   }
   head.next = head.next.next
   l.length--
-}
-
-func main(){
-  myList := linkedList{}
-  node1 := &node{data:48}
-  node2 := &node{data:18}
-  node3 := &node{data:16}
-  node4 := &node{data:67}
-  node5 := &node{data:31}
-  myList.append(node1)
-  myList.append(node2)
-  myList.append(node3)
-  myList.append(node4)
-  myList.append(node5)
-
-  myList.print()
-  myList.delete(16)
-  myList.print()
-  myList.delete(100)
-  myList.print()
-  myList.delete(48)
-  emptyList := linkedList{}
-  emptyList.delete(10)
-  myList.print()
 }

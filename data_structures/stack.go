@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package data_structures
 
 type stack struct {
 	items []int
@@ -16,17 +14,4 @@ func (s *stack) pop() int {
 	s.items = s.items[:lastIndex]
 
 	return removedItem
-}
-
-func main() {
-	var myStack = stack{}
-	fmt.Println(myStack.items)
-	myStack.push(1)
-	myStack.push(150)
-	myStack.push(50)
-	fmt.Println(myStack.items)
-	myStack.pop()
-	fmt.Println(myStack.items)
-	myStack.pop()
-	fmt.Println(myStack.items)
 }

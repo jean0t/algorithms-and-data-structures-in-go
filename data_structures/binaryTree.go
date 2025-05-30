@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package data_structures
 
 type node struct {
 	Value int
@@ -10,22 +8,4 @@ type node struct {
 
 func newNode(value int) *node {
 	return &node{Value: value}
-}
-
-func main() {
-	root := newNode(5)
-	root.Left = newNode(3)
-	root.Right = newNode(6)
-	root.Left.Left = newNode(9)
-	root.Right.Right = newNode(10)
-	fmt.Println("In-order tranversal: ") // the result will be 9 3 5 6 10
-	inOrder(root)
-}
-
-func inOrder(node *node) {
-	if node != nil {
-		inOrder(node.Left)
-		fmt.Println(node.Value)
-		inOrder(node.Right)
-	}
 }
