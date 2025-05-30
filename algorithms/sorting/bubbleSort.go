@@ -1,4 +1,4 @@
-package main
+package sorting
 
 import "fmt"
 
@@ -12,11 +12,4 @@ func bubbleSort(numbers []int) []int {
 		}
 	}
 	return numbers
-}
-
-func main() {
-	var numbers = []int{4, 2, 5, 1, 7}
-	fmt.Println("Unsorted: ", numbers)
-	var sorted = bubbleSort(numbers)
-	fmt.Println("Sorted: ", sorted)
 }
