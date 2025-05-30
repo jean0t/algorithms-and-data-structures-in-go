@@ -103,3 +103,17 @@ func TestBubbleSort(t *testing.T) {
         })
     }
 }
+
+func TestInsertionSort(t *testing.T) {
+    for _, tt := range testCases {
+        t.Run(tt.name, func(t *testing.T) {
+            actual := make([]int, len(tt.input))
+            copy(actual, tt.input)
+
+            sorting.InsertionSort(actual)
+            if !reflect.DeepEqual(actual, tt.expected) {
+                t.Errorf("InsertionSort(%v) = %v; want %v\n", tt.input, actual, tt.expected)
+            }
+        })
+    }
+}
