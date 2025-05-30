@@ -11,19 +11,19 @@ func QuickSortRandomized(arr []int) {
     }
 
     rand.Seed(time.Now().UnixNano())
-    sort(arr, 0, len(arr)-1)
+    sort2(arr, 0, len(arr)-1)
 }
 
-func sort(arr []int, low, high int) {
+func sort2(arr []int, low, high int) {
     if low < high {
-        var p int = partition(arr, low, high)
+        var p int = partition2(arr, low, high)
         
-        sort(arr, low, p-1)
-        sort(arr, p+1, high)
+        sort2(arr, low, p-1)
+        sort2(arr, p+1, high)
     }
 }
 
-func partition(arr []int, low, high int) int {
+func partition2(arr []int, low, high int) int {
     var randomIndex int = rand.Intn(high + 1 - low) + low
     arr[randomIndex], arr[high] = arr[high], arr[randomIndex]
     
@@ -31,9 +31,9 @@ func partition(arr []int, low, high int) int {
     var i int = low
 
     for j := low; j < high; j++ {
-        if arr[j] <= pivot {
-            i++
+        if arr[j] < pivot {
             arr[i], arr[j] = arr[j], arr[i]
+            i++
         }
     }
 
