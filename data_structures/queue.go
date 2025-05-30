@@ -1,15 +1,19 @@
 package data_structures
 
-type queue struct {
-	items []int
+type Queue struct {
+	Items []int
 }
 
-func (q *queue) enqueue(i int) {
-	q.items = append(q.items, i)
+func (q *Queue) Enqueue(i int) {
+	q.Items = append(q.Items, i)
 }
 
-func (q *queue) dequeue() int {
-	var removedItem = q.items[0]
-	q.items = q.items[1:]
+func (q *Queue) Dequeue() int {
+	var removedItem = q.Items[0]
+	q.Items = q.Items[1:]
 	return removedItem
+}
+
+func NewQueue() *Queue {
+    return &Queue{Items: make([]int, 0)}
 }
