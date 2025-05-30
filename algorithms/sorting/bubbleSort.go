@@ -1,6 +1,6 @@
 package sorting
 
-func bubbleSort(numbers []int) []int {
+func BubbleSort(numbers []int) []int {
 	var length = len(numbers) - 1
 	for i := 0; i <= length; i++ {
 		for j := 0; j <= length-1; j++ {

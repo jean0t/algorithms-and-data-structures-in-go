@@ -1,6 +1,6 @@
 package sorting
 
-func insertionSort(numbers []int) []int {
+func InsertionSort(numbers []int) []int {
 	var length = len(numbers)
 	for i := 1; i < length; i++ {
 		var j = i - 1
