@@ -1,7 +1,5 @@
 package sorting
 
-import "fmt"
-
 func bubbleSort(numbers []int) []int {
 	var length = len(numbers) - 1
 	for i := 0; i <= length; i++ {

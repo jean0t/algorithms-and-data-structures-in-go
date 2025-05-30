@@ -1,7 +1,5 @@
 package sorting
 
-import "fmt"
-
 func insertionSort(numbers []int) []int {
 	var length = len(numbers)
 	for i := 1; i < length; i++ {
