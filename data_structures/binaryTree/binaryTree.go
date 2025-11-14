@@ -1,6 +1,5 @@
 package binaryTree
 
-
 type node struct {
 	Value int
 	Left  *node
@@ -18,14 +17,14 @@ func (n *node) insert(data int) {
 			return
 		}
 		n.Left.insert(data)
-		
+
 	} else if data > n.Value {
 		if n.Right == nil {
 			n.Right = newNode(data)
 			return
 		}
 		n.Right.insert(data)
-		
+
 	} else {
 		// nous n'avons pas accepter les dupliqués
 		return
@@ -42,7 +41,7 @@ func (n *node) search(data int) bool {
 			return false
 		}
 		n.Left.search(data)
-		
+
 	} else if data > n.Value {
 		if n.Right == nil {
 			return false
@@ -51,7 +50,6 @@ func (n *node) search(data int) bool {
 		n.Right.search(data)
 	}
 }
-
 
 type Tree struct {
 	Node *node
